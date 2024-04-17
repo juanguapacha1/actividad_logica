@@ -1,0 +1,356 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+                     v2.0 | 20110126
+                     License: none (public domain)
+                  */
+
+                  html,
+                  body,
+                  div,
+                  span,
+                  applet,
+                  object,
+                  iframe,
+                  h1,
+                  h2,
+                  h3,
+                  h4,
+                  h5,
+                  h6,
+                  p,
+                  blockquote,
+                  pre,
+                  a,
+                  abbr,
+                  acronym,
+                  address,
+                  big,
+                  cite,
+                  code,
+                  del,
+                  dfn,
+                  em,
+                  img,
+                  ins,
+                  kbd,
+                  q,
+                  s,
+                  samp,
+                  small,
+                  strike,
+                  strong,
+                  sub,
+                  sup,
+                  tt,
+                  var,
+                  b,
+                  u,
+                  i,
+                  center,
+                  dl,
+                  dt,
+                  dd,
+                  ol,
+                  ul,
+                  li,
+                  fieldset,
+                  form,
+                  label,
+                  legend,
+                  table,
+                  caption,
+                  tbody,
+                  tfoot,
+                  thead,
+                  tr,
+                  th,
+                  td,
+                  article,
+                  aside,
+                  canvas,
+                  details,
+                  embed,
+                  figure,
+                  figcaption,
+                  footer,
+                  header,
+                  hgroup,
+                  menu,
+                  nav,
+                  output,
+                  ruby,
+                  section,
+                  summary,
+                  time,
+                  mark,
+                  audio,
+                  video {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    font-size: 100%;
+                    font: inherit;
+                    vertical-align: baseline;
+                  }
+                  /* HTML5 display-role reset for older browsers */
+                  article,
+                  aside,
+                  details,
+                  figcaption,
+                  figure,
+                  footer,
+                  header,
+                  hgroup,
+                  menu,
+                  nav,
+                  section {
+                    display: block;
+                  }
+                  body {
+                    line-height: 1;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+                      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                  }
+                  ol,
+                  ul {
+                    list-style: none;
+                  }
+                  blockquote,
+                  q {
+                    quotes: none;
+                  }
+                  blockquote:before,
+                  blockquote:after,
+                  q:before,
+                  q:after {
+                    content: "";
+                    content: none;
+                  }
+                  table {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                  }
+                  * {
+                    box-sizing: border-box;
+                  }
+                  a {
+                    color: #007bff;
+                    text-decoration: none;
+                  }
+                  p {
+                    line-height: 1.5;
+                  }
+                  small {
+                    font-size: 80%;
+                    font-weight: 400;
+                  }
+                  .float-right {
+                    float: right;
+                  }
+                  .container {
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 0 15px;
+                  }
+                  .text-gray {
+                    color: #6c757d;
+                  }
+                  .btn-group {
+                    position: relative;
+                    display: inline-flex;
+                  }
+                  .btn-group > .btn-sm {
+                    position: relative;
+                    flex: 1 1 auto;
+                  }
+                  .btn-group > .btn-sm:last-child {
+                    border-bottom-left-radius: 0;
+                    border-top-left-radius: 0;
+                    margin-left: -2px;
+                  }
+                  .btn-group > .btn-sm:first-child {
+                    border-bottom-right-radius: 0;
+                    border-top-right-radius: 0;
+                    border-right: 0;
+                  }
+                  .btn-sm {
+                    display: inline-block;
+                    font-weight: 400;
+                    color: #212529;
+                    text-align: center;
+                    border: 1px solid transparent;
+                    text-decoration: none;
+                    padding: 0.25rem 0.5rem;
+                    font-size: 0.875rem;
+                    line-height: 1.5;
+                    border-radius: 0.2rem;
+                    cursor: pointer;
+                  }
+                  .header {
+                    background-color: #343a40;
+                    padding: 8px 16px;
+                  }
+                  .header-content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 40px;
+                  }
+                  .navbar-btn {
+                    background-color: #343a40;
+                    color: rgba(255, 255, 255, 0.5);
+                    background: none;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    text-align: center;
+                    cursor: pointer;
+                    padding: 4px 12px;
+                  }
+                  .navbar-btn-icon {
+                    width: 1.5em;
+                    height: 1.5em;
+                    display: unset;
+                    font-size: 30px;
+                  }
+                  .logo {
+                    color: #fff;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    font-size: 1.25rem;
+                    line-height: inherit;
+                    white-space: nowrap;
+                    font-weight: bolder;
+                    text-decoration: none;
+                  }
+                  .mr-2 {
+                    margin-right: 0.5rem;
+                  }
+                  .jumbotron {
+                    padding: 96px 32px;
+                    text-align: center;
+                    margin: 0 auto;
+                  }
+                  .jumbotron > .container {
+                    max-width: 40rem;
+                  }
+                  .jumbotron-title {
+                    font-size: 2.5rem;
+                    font-weight: 300;
+                    line-height: 48px;
+                    margin-bottom: 0.5rem;
+                  }
+                  .jumbotron-body {
+                    font-size: 1.25rem;
+                    margin-bottom: 1rem;
+                    font-weight: 300;
+                    line-height: 1.5;
+                  }
+                  .btn {
+                    display: inline-block;
+                    font-weight: 400;
+                    color: #212529;
+                    text-align: center;
+                    border: 1px solid transparent;
+                    padding: 0.375rem 0.75rem;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    border-radius: 0.25rem;
+                    text-decoration: none;
+                  }
+                  .my-2 {
+                    margin: 0.5rem 0;
+                  }
+                  .btn-primary {
+                    background-color: #007bff;
+                    border-color: #007bff;
+                    color: #fff;
+                  }
+                  .btn-secondary {
+                    background-color: #6c757d;
+                    border-color: #6c757d;
+                    color: #fff;
+                  }
+                  .btn-outline-secondary {
+                    background: transparent;
+                    border-color: #6c757d;
+                    color: #6c757d;
+                  }
+                  .album {
+                    background-color: #f8f9fa;
+                    padding: 3rem 0;
+                  }
+                  .row {
+                    margin: 0 -15px;
+                    display: flex;
+                    flex-wrap: wrap;
+                  }
+                  .col-4 {
+                    width: 100%;
+                    position: relative;
+                    padding: 0 15px;
+                  }
+                  .card {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid rgba(0, 0, 0, 0.125);
+                    border-radius: 0.25rem;
+                    margin-bottom: 1.5rem;
+                    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+                    background-clip: border-box;
+                    background-color: #fff;
+                    overflow: hidden;
+                  }
+                  .card-body {
+                    flex: 1 1 auto;
+                    padding: 1.25rem;
+                  }
+                  .card-img {
+                    font-size: 1.125rem;
+                    text-anchor: middle;
+                  }
+                  .card-text {
+                    margin-bottom: 1rem;
+                  }
+                  .card-footer {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                  }
+                  .footer {
+                    padding: 3rem 0;
+                  }
+                  .footer p {
+                    margin-bottom: 0.25rem;
+                  }
+                  @media (max-width: 576px) {
+                    .jumbotron {
+                      padding: 3rem 1rem;
+                    }
+                  }
+                  @media (min-width: 576px) {
+                    .container {
+                      max-width: 540px;
+                    }
+                  }
+                  @media (min-width: 768px) {
+                    .container {
+                      max-width: 720px;
+                    }
+                    .col-4 {
+                      flex: 0 0 33.333333%;
+                      max-width: 33.333333%;
+                    }
+                  }
+                  @media (min-width: 992px) {
+                    .container {
+                      max-width: 960px;
+                    }
+                  }
+                  @media (min-width: 1200px) {
+                    .container {
+                      max-width: 1140px;
+                    }
+                  }
